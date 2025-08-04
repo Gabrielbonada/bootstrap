@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fazer Pedido - Restaurante Corleone</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-warning" href="#">Restaurante Corleone</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link text-light" href="index.html">Início</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="cardapio.html">Cardápio</a></li>
+          <li class="nav-item"><a class="nav-link active text-warning" href="pedido.html">Fazer Pedido</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="container py-5">
+    <h2 class="text-center mb-4">Fazer Pedido</h2>
+    <form class="mx-auto" style="max-width: 600px;">
+      <div class="mb-3">
+        <label for="nome" class="form-label">Seu Nome</label>
+        <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="pedido" class="form-label">Pedido</label>
+        <textarea class="form-control" id="pedido" rows="4" placeholder="Ex: 1 Pizza Calabresa, 1 Suco Natural..." required></textarea>
+      </div>
+
+      <div class="mb-3">
+        <label for="endereco" class="form-label">Endereço de Entrega</label>
+        <input type="text" class="form-control" id="endereco" placeholder="Rua, número, bairro..." required>
+      </div>
+
+      <div class="mb-3">
+        <label for="pagamento" class="form-label">Forma de Pagamento</label>
+        <select class="form-select" id="pagamento" required>
+          <option value="">Selecione</option>
+          <option>Cartão de Crédito</option>
+          <option>Cartão de Débito</option>
+          <option>Pix</option>
+          <option>Dinheiro</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn btn-warning w-100">Enviar Pedido</button>
+    </form>
+  </section>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">&copy; 2025 Restaurante Corleone. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff8f5;
+}
+.card-title {
+  color: #dc3545;
+}
+.card:hover {
+  transform: scale(1.02);
+  transition: 0.3s ease-in-out;
+}
