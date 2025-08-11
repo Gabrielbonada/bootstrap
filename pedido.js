@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     const mensagem = `
-📌 *Pedido via Site - Restaurante Corleone* 📌
+📌 *Pedido via Site - Restaurante companhia das pizzas* 📌
 
 👤 *Nome:* ${nome}
 🍕 *Pedido:* ${pedido}
